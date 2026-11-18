@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEYTÚ | Cosmética & Cuidado Personal</title>
+<link rel="icon" type="image/jpeg" href="seytu logo.jpg">
+<meta name="description" content="Catálogo oficial de productos SEYTÚ Cosmética y Cuidado Personal, asesoría personalizada, compra en línea como Cliente Admirable, afiliación y programas digitales de belleza.">
+<style>
+:root {
+--blu-deep: #160829;
+--blu-primary: #6b2d8b;
+--blu-accent: #9b4dca;
+--blu-soft: #f3e8ff;
+--omni-purple: #6b2d8b;
+--omni-purple-dark: #4f1d69;
+--whatsapp: #1fa855;
+--whatsapp-dark: #168742;
+--hotmart: #f04e23;
+--hotmart-dark: #c93b15;
+--bg: #faf7fc;
+--surface: #ffffff;
+--text: #1c1528;
+--muted: #5b526b;
+--border: #e5dcf0;
+--radius: 16px;
+--shadow-sm: 0 4px 14px rgba(22, 8, 41, 0.06);
+--shadow-md: 0 12px 32px rgba(22, 8, 41, 0.1);
+--transition: 0.24s ease;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 12px rgba(22, 8, 41, 0.04);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  min-height: 76px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--blu-deep);
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--omni-purple), var(--blu-accent));
+  display: grid;
+  place-items: center;
+  color: #fff;
+  box-shadow: 0 6px 14px rgba(107, 45, 139, 0.28);
+  flex-shrink: 0;
+}
+
+.brand span.accent {
+  color: var(--omni-purple);
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.main-nav a {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+
+.main-nav a:hover {
+  color: var(--omni-purple);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 0.92rem;
+  border: none;
+  cursor: pointer;
+  transition: transform var(--transition), background-color var(--transition), box-shadow var(--transition);
+  text-align: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-call {
+  background: var(--blu-soft);
+  color: var(--omni-purple);
+  border: 1px solid #dfc5f7;
+}
+
+.btn-call:hover {
+  background: #e9d5ff;
+}
+
+.btn-whatsapp {
+  background: var(--whatsapp);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(31, 168, 85, 0.25);
+}
+
+.btn-whatsapp:hover {
+  background: var(--whatsapp-dark);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--omni-purple), var(--blu-accent));
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(107, 45, 139, 0.28);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 10px 24px rgba(107, 45, 139, 0.36);
+}
+
+.btn-purple {
+  background: linear-gradient(135deg, var(--omni-purple), #8c3fb5);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(107, 45, 139, 0.28);
+}
+
+.btn-purple:hover {
+  background: linear-gradient(135deg, var(--omni-purple-dark), var(--omni-purple));
+}
+
+.btn-hotmart {
+  background: var(--hotmart);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(240, 78, 35, 0.25);
+}
+
+.btn-hotmart:hover {
+  background: var(--hotmart-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #fff;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+/* Hero */
+.hero {
+  background: radial-gradient(circle at top right, #5a189a 0%, #160829 72%);
+  color: #fff;
+  padding: 64px 0 72px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 36px;
+  align-items: center;
+  max-width: 820px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.12;
+  font-weight: 800;
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+}
+
+.hero p.lead {
+  font-size: 1.1rem;
+  color: #e9d8fd;
+  margin-bottom: 28px;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.hero-cta-group .btn {
+  padding: 13px 24px;
+  font-size: 0.98rem;
+}
+
+/* Sections */
+.section {
+  padding: 68px 0;
+}
+
+.section-alt {
+  background: #ffffff;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 36px;
+}
+
+.section-kicker {
+  display: inline-block;
+  color: var(--omni-purple);
+  background: var(--blu-soft);
+  padding: 5px 14px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 10px;
+}
+
+.section-header h2 {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  color: var(--blu-deep);
+  font-weight: 800;
+  margin-bottom: 10px;
+  letter-spacing: -0.02em;
+}
+
+.section-header p {
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+/* Catalog Controls */
+.catalog-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.search-box {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 13px 18px 13px 44px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  font-size: 0.96rem;
+  color: var(--text);
+  box-shadow: var(--shadow-sm);
+  outline: none;
+  transition: border-color var(--transition);
+}
+
+.search-box input:focus {
+  border-color: var(--omni-purple);
+}
+
+.search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--muted);
+  pointer-events: none;
+}
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+}
+
+.filter-pill {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+  background: var(--omni-purple);
+  color: #fff;
+  border-color: var(--omni-purple);
+}
+
+.catalog-count {
+  font-size: 0.9rem;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+/* Product Grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.product-media {
+  position: relative;
+  background: linear-gradient(180deg, #faf5ff 0%, #ffffff 100%);
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  border-bottom: 1px solid #efe7f7;
+}
+
+.product-media img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.product-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #f3e8ff, #eaf4ff);
+  color: var(--omni-purple);
+  text-align: center;
+  padding: 12px;
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.product-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(22, 8, 41, 0.85);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.product-body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.product-title {
+  font-size: 1.03rem;
+  font-weight: 800;
+  color: var(--blu-deep);
+  margin-bottom: 6px;
+  line-height: 1.3;
+}
+
+.product-desc {
+  font-size: 0.86rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.product-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.product-actions .btn {
+  width: 100%;
+  padding: 9px 14px;
+  font-size: 0.84rem;
+}
+
+.btn-store-pick {
+  background: var(--blu-soft);
+  color: var(--omni-purple);
+  border: 1px solid #dfc5f7;
+}
+
+.btn-store-pick:hover {
+  background: #e9d5ff;
+}
+
+/* Affiliation Centered Block */
+.affiliation-section {
+  padding: 72px 0;
+  background: linear-gradient(135deg, #f3ebfa 0%, #e9f4ff 100%);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.affiliation-box {
+  max-width: 820px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #dfd2f0;
+  border-radius: 24px;
+  padding: 48px 36px;
+  text-align: center;
+  box-shadow: 0 18px 40px rgba(79, 29, 105, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.affiliation-box .section-kicker {
+  background: #f3e8ff;
+  color: var(--omni-purple);
+}
+
+.affiliation-box h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.4rem);
+  color: var(--blu-deep);
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.affiliation-box p {
+  color: var(--muted);
+  max-width: 640px;
+  margin: 0 auto 24px;
+  font-size: 1.03rem;
+}
+
+.affiliation-perks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.perk-pill {
+  background: #f9f6fc;
+  border: 1px solid #e6d7f5;
+  color: var(--omni-purple-dark);
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.affiliation-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.affiliation-actions .btn {
+  padding: 14px 28px;
+  font-size: 0.98rem;
+}
+
+/* Hotmart Grid */
+.hotmart-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 22px;
+}
+
+.hotmart-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.hotmart-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.hotmart-media {
+  height: 180px;
+  background: linear-gradient(135deg, #fff5f1, #ffece5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  position: relative;
+  border-bottom: 1px solid #f5e2dc;
+}
+
+.hotmart-media img {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.hotmart-fallback {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffe9e1, #fff4ef);
+  color: var(--hotmart-dark);
+  text-align: center;
+  padding: 14px;
+  font-weight: 800;
+  font-size: 0.92rem;
+}
+
+.hotmart-tag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: var(--hotmart);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.hotmart-body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.hotmart-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--blu-deep);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.hotmart-desc {
+  font-size: 0.87rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+/* Contact Section */
+.visit-container {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+.visit-rectangle-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.visit-rectangle-card h3 {
+  font-size: 1.5rem;
+  color: var(--blu-deep);
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.visit-content-row {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.visit-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.visit-list li {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.visit-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--blu-soft);
+  color: var(--omni-purple);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  font-weight: 800;
+}
+
+.visit-map-side {
+  background: linear-gradient(135deg, #faf5ff, #f3e8ff);
+  border: 1px solid #e6d7f5;
+  border-radius: 16px;
+  padding: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.visit-map-side h4 {
+  font-size: 1.15rem;
+  color: var(--blu-deep);
+  font-weight: 800;
+}
+
+.visit-map-side p {
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.visit-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+/* Footer */
+.site-footer {
+  background: var(--blu-deep);
+  color: #d8c8ec;
+  padding: 46px 0 28px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  gap: 28px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.footer-brand {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.footer-col h4 {
+  color: #fff;
+  font-size: 0.98rem;
+  margin-bottom: 12px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.footer-col a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer-disclaimer {
+  margin-top: 24px;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: #e9d8fd;
+  font-weight: 600;
+}
+
+.footer-copy {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 0.82rem;
+  color: #a792c2;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px 20px;
+  background: #fff;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  color: var(--muted);
+}
+
+@media (max-width: 860px) {
+  .visit-content-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header-inner {
+    justify-content: center;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .visit-rectangle-card {
+    padding: 24px 16px;
+  }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+<div class="container header-inner">
+  <a href="#inicio" class="brand">
+    <span class="brand-mark" aria-hidden="true">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+      </svg>
+    </span>
+    <span>SEYTÚ <span class="accent">Cosmética</span></span>
+  </a>
+
+  <nav class="main-nav" aria-label="Navegación principal">
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo-seytu">Catálogo SEYTÚ</a>
+    <a href="#afiliacion">Afiliación</a>
+    <a href="#programas-digitales">Academia & Cursos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <div class="header-actions">
+    <a href="tel:6562501282" class="btn btn-call" aria-label="Llamar al 656 250 1282">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+      </svg>
+      656 250 1282
+    </a>
+    <a href="https://wa.me/526562501282?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20productos%20SEYT%C3%9A." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12.03 2c-5.51 0-9.97 4.46-9.97 9.97 0 1.76.46 3.48 1.33 4.99L2 22l5.18-1.36a9.93 9.93 0 0 0 4.85 1.26h.01c5.51 0 9.97-4.46 9.97-9.97 0-2.66-1.04-5.16-2.92-7.05A9.9 9.9 0 0 0 12.03 2zm5.8 14.17c-.24.68-1.41 1.3-1.95 1.38-.5.07-1.13.1-1.83-.12-.42-.13-.96-.31-1.65-.61-2.91-1.26-4.81-4.18-4.96-4.38-.14-.2-1.18-1.57-1.18-3s.75-2.13 1.01-2.42c.27-.29.58-.36.78-.36h.56c.18 0 .42-.07.66.5.24.59.83 2.02.9 2.17.07.14.12.31.02.5-.1.2-.15.32-.3.5-.14.17-.3.38-.43.51-.14.14-.29.3-.13.59.17.29.74 1.22 1.59 1.98 1.09.97 2.01 1.27 2.3 1.42.29.14.46.12.63-.07.17-.2.72-.84.91-1.13.2-.29.39-.24.66-.14.27.1 1.7.8 1.99.95.29.14.48.22.55.34.07.12.07.69-.17 1.37z"/>
+      </svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+<div class="container hero-grid">
+  <div>
+    <h1>Cosmética Hipoalergénica y Cuidado Personal SEYTÚ</h1>
+    <p class="lead">
+      Descubre la línea completa de belleza, maquillaje resistente al agua, cuidado facial y capilar libre de parabenos y no probada en animales. Compra directo en línea o pide asesoría personalizada.
+    </p>
+    <div class="hero-cta-group">
+      <a href="https://portal.omnilife.com/registro-cliente?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Comprar en Línea Oficial</a>
+      <a href="#catalogo-seytu" class="btn btn-outline">Ver Catálogo SEYTÚ</a>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="catalogo-seytu" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-kicker">Línea Cosmética Omnilife</span>
+      <h2>Catálogo Completo de Productos SEYTÚ</h2>
+      <p>Explora nuestros cosméticos, sueros, tintes sin amoniaco y tratamientos especializados. Puedes pedirlos directamente por WhatsApp o registrarte gratis como Cliente Admirable para envío a domicilio.</p>
+    </div>
+
+    <div class="catalog-controls">
+      <div class="search-box">
+        <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+        <input type="search" id="seytu-search" placeholder="Buscar producto (ej. Maquillaje UP+, Espuma, Omniplus Gel, Suero, Tinte)..." aria-label="Buscar producto SEYTÚ">
+      </div>
+
+      <div class="filter-pills" id="seytu-filters" role="tablist" aria-label="Categorías de productos SEYTÚ">
+        <button type="button" class="filter-pill active" data-category="Todos">Todos</button>
+        <button type="button" class="filter-pill" data-category="Cuidado Facial">Cuidado Facial</button>
+        <button type="button" class="filter-pill" data-category="Maquillaje">Maquillaje</button>
+        <button type="button" class="filter-pill" data-category="Cuidado Capilar">Cuidado Capilar</button>
+        <button type="button" class="filter-pill" data-category="Cuidado Corporal">Cuidado Corporal</button>
+        <button type="button" class="filter-pill" data-category="Accesorios y Especiales">Accesorios y Especiales</button>
+      </div>
+
+      <div class="catalog-count" id="seytu-count">Mostrando productos</div>
+    </div>
+
+    <div class="products-grid" id="seytu-grid"></div>
+  </div>
+</section>
+
+<section id="afiliacion" class="affiliation-section">
+  <div class="container">
+    <div class="affiliation-box">
+      <span class="section-kicker">Oportunidad de Negocio & Descuentos</span>
+      <h2>Afíliate a SEYTÚ & Omnilife</h2>
+      <p>
+        Adquiere tu membresía de Empresario Independiente para comprar toda la línea SEYTÚ y Omnilife con descuentos del 20% al 40%, o emprende tu propio negocio de belleza en más de 20 países.
+      </p>
+      <div class="affiliation-perks">
+        <span class="perk-pill">Descuentos del 20% al 40%</span>
+        <span class="perk-pill">Cosmética Hipoalergénica</span>
+        <span class="perk-pill">Asesoría personalizada</span>
+        <span class="perk-pill">Sin compras mínimas obligatorias</span>
+      </div>
+      <div class="affiliation-actions">
+        <a href="https://portal.omnilife.com/registro?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer" class="btn btn-purple">
+          Afiliarme como Empresario
+        </a>
+        <a href="https://portal.omnilife.com/registro-cliente?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer" class="btn btn-call">
+          Registro Cliente Admirable (Gratis)
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="programas-digitales" class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-kicker">Formación Profesional</span>
+      <h2>Academia & Programas Digitales de Belleza</h2>
+      <p>Especialízate desde casa con cursos digitales certificados en maquillaje, pestañas, cejas, manicura, depilación y cosmética artesanal con acceso inmediato.</p>
+    </div>
+
+    <div class="hotmart-grid" id="hotmart-grid"></div>
+  </div>
+</section>
+
+<section id="contacto" class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-kicker">Atención Personalizada</span>
+      <h2>Pedidos y Asesoría Directa</h2>
+      <p>Estamos listos para ayudarte a elegir los tonos y tratamientos ideales para tu tipo de piel y cabello.</p>
+    </div>
+
+    <div class="visit-container">
+      <div class="visit-rectangle-card">
+        <h3>Canales Oficiales de Atención</h3>
+        
+        <div class="visit-content-row">
+          <ul class="visit-list">
+            <li>
+              <span class="visit-icon">🛍️</span>
+              <div>
+                <strong>Tienda Oficial en Línea (Cliente Admirable):</strong><br>
+                Regístrate gratis y recibe tus productos SEYTÚ directo en la puerta de tu casa en todo México.
+              </div>
+            </li>
+            <li>
+              <span class="visit-icon">📞</span>
+              <div>
+                <strong>Teléfono Directo:</strong><br>
+                <a href="tel:6562501282">656 250 1282</a>
+              </div>
+            </li>
+            <li>
+              <span class="visit-icon">💬</span>
+              <div>
+                <strong>WhatsApp de Pedidos y Asesoría:</strong><br>
+                Cotiza tus productos, consulta disponibilidad y recibe recomendaciones personalizadas.
+              </div>
+            </li>
+            <li>
+              <span class="visit-icon">💼</span>
+              <div>
+                <strong>Distribuidor Independiente Autorizado:</strong><br>
+                Respaldo directo de Omnilife & SEYTÚ Cosmética.
+              </div>
+            </li>
+          </ul>
+
+          <div class="visit-map-side">
+            <h4>Compra Segura en Línea</h4>
+            <p>Accede al portal oficial de Omnilife/SEYTÚ como Cliente Admirable o inicia tu registro como distribuidor.</p>
+            <a href="https://portal.omnilife.com/registro-cliente?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="width: 100%;">
+              Ir a Tienda Oficial SEYTÚ
+            </a>
+          </div>
+        </div>
+
+        <div class="visit-actions">
+          <a href="tel:6562501282" class="btn btn-call">Llamar: 656 250 1282</a>
+          <a href="https://wa.me/526562501282?text=Hola%2C%20quiero%20hacer%20un%20pedido%20de%20productos%20SEYT%C3%9A." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">Enviar WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+  <div>
+    <div class="footer-brand">SEYTÚ Cosmética & Cuidado Personal</div>
+    <p>Tu punto de confianza para adquirir cosméticos hipoalergénicos SEYTÚ originales, afiliarte como distribuidor independiente y capacitarte con programas digitales de belleza.</p>
+  </div>
+  <div class="footer-col">
+    <h4>Navegación</h4>
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#catalogo-seytu">Catálogo SEYTÚ</a></li>
+      <li><a href="#afiliacion">Oportunidad de Afiliación</a></li>
+      <li><a href="#programas-digitales">Academia & Cursos</a></li>
+      <li><a href="#contacto">Contacto Directo</a></li>
+    </ul>
+  </div>
+  <div class="footer-col">
+    <h4>Contacto y Registros</h4>
+    <ul>
+      <li><a href="tel:6562501282">Tel: 656 250 1282</a></li>
+      <li><a href="https://wa.me/526562501282" target="_blank" rel="noopener noreferrer">Atención por WhatsApp</a></li>
+      <li><a href="https://portal.omnilife.com/registro-cliente?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer">Registro Cliente Admirable</a></li>
+      <li><a href="https://portal.omnilife.com/registro?distributor_code=007475MHR&country_code=MEX&lang=es" target="_blank" rel="noopener noreferrer">Registro Empresario</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer-disclaimer">
+  Los productos cosméticos SEYTÚ son hipoalergénicos, libres de parabenos y no probados en animales. Los suplementos alimenticios no son medicamentos.
+</div>
+
+<p class="footer-copy">© 2026 SEYTÚ Cosmética · Distribuidor Independiente Omnilife.</p>
+</div>
+</footer>
+
+<script>
+(function () {
+const seytuBuyUrl = "https://portal.omnilife.com/registro-cliente?distributor_code=007475MHR&country_code=MEX&lang=es";
+const whatsappBase = "https://wa.me/526562501282?text=";
+
+const seytuProducts = [
+{ name: "Acondicionador con Extractos Herbales de Origen Natural", img: "seytu/Acondicionador con Extractos Herbales de Origen Natural.png", cat: "Cuidado Capilar", desc: "Hidrata, suaviza y da brillo natural al cabello con extractos botánicos." },
+{ name: "Bálsamo Labial Omniplus FPS15", img: "seytu/Bálsamo Labial Omniplus FPS15.png", cat: "Maquillaje", desc: "Protege, repara e hidrata profundamente tus labios con extracto de Omniplus y FPS 15." },
+{ name: "Brillo Labial", img: "seytu/Brillo Labial.png", cat: "Maquillaje", desc: "Acabado luminoso, hidratante y sin sensación pegajosa para realzar tus labios." },
+{ name: "Brocha para Maquillaje Líquido", img: "seytu/Brocha para Maquillaje Líquido.png", cat: "Accesorios y Especiales", desc: "Cerdas suaves de alta densidad para una aplicación uniforme y profesional." },
+{ name: "Complejo Multivitamínico Capilar", img: "seytu/Complejo Multivitamínico Capilar.png", cat: "Cuidado Capilar", desc: "Tratamiento intensivo en ampolletas para fortalecer, reparar y revitalizar el cabello." },
+{ name: "Corrector Líquido Deep", img: "seytu/Corrector Líquido Deep.png", cat: "Maquillaje", desc: "Alta cobertura y larga duración para disimular imperfecciones y ojeras en tonos profundos." },
+{ name: "Corrector Líquido Fair", img: "seytu/Corrector Líquido Fair.png", cat: "Maquillaje", desc: "Cobertura ligera y natural ideal para iluminar y corregir pieles claras." },
+{ name: "Corrector Líquido Light", img: "seytu/Corrector Líquido Light.png", cat: "Maquillaje", desc: "Textura cremosa de fácil difuminado para un acabado fresco en tonos claros." },
+{ name: "Corrector Líquido Medium", img: "seytu/Corrector Líquido Medium.png", cat: "Maquillaje", desc: "Unifica el tono y cubre imperfecciones con acabado natural en pieles medias." },
+{ name: "Corrector Líquido", img: "seytu/Corrector Líquido.webp", cat: "Maquillaje", desc: "Fórmula de larga duración enriquecida con ingredientes hidratantes." },
+{ name: "Crema Corporal Piel de Naranja", img: "seytu/Crema Corporal Piel de Naranja.webp", cat: "Cuidado Corporal", desc: "Ayuda a mejorar la firmeza, elasticidad y apariencia de la piel." },
+{ name: "Crema de Día FPS 30", img: "seytu/Crema de Día FPS 30.png", cat: "Cuidado Facial", desc: "Hidratación diaria con protección solar contra rayos UVA/UVB." },
+{ name: "Crema de Manos Antibacterial Manzana-Pera", img: "seytu/Crema de Manos Antibacterial Manzana-Pera.png", cat: "Cuidado Corporal", desc: "Limpia, protege y humecta tus manos con un fresco aroma frutal." },
+{ name: "Crema de Manos Antibacterial Sandía - Melón", img: "seytu/Crema de Manos Antibacterial Sandía - Melón.png", cat: "Cuidado Corporal", desc: "Elimina impurezas sin resecar la piel dejando un aroma delicioso." },
+{ name: "Crema de Manos Antibacterial Vainilla", img: "seytu/Crema de Manos Antibacterial Vainilla.png", cat: "Cuidado Corporal", desc: "Protección antibacterial con suavidad y cálido aroma a vainilla." },
+{ name: "Crema Hidratante de Día FPS 20", img: "seytu/Crema Hidratante de Día FPS 20.png", cat: "Cuidado Facial", desc: "Nutre el rostro durante el día protegiéndolo del fotoenvejecimiento." },
+{ name: "Crema Hidratante de Noche", img: "seytu/Crema Hidratante de Noche.png", cat: "Cuidado Facial", desc: "Regenera y revitaliza la piel mientras descansas para un despertar luminoso." },
+{ name: "Crema para Contorno de Ojos", img: "seytu/Crema para Contorno de Ojos.png", cat: "Cuidado Facial", desc: "Reduce líneas de expresión, bolsas y signos de fatiga en la mirada." },
+{ name: "Crema Para Manos Coco Vainilla", img: "seytu/Crema Para Manos Coco Vainilla.png", cat: "Cuidado Corporal", desc: "Humectación profunda y suavidad aterciopelada con aroma tropical." },
+{ name: "Crema para Manos Frutos Rojos", img: "seytu/Crema para Manos Frutos Rojos.png", cat: "Cuidado Corporal", desc: "Nutre intensamente las manos secas con extractos antioxidantes." },
+{ name: "Crema para Manos, Cuello y Escote", img: "seytu/Crema para Manos, Cuello y Escote.png", cat: "Cuidado Corporal", desc: "Fórmula reafirmante e hidratante para zonas delicadas de la piel." },
+{ name: "Delineador Líquido para Ojos Negro", img: "seytu/Delineador Líquido para Ojos Negro.png", cat: "Maquillaje", desc: "Trazo preciso, color negro intenso y fórmula resistente al agua." },
+{ name: "Delineador Penliner", img: "seytu/Delineador Penliner.png", cat: "Maquillaje", desc: "Plumón delineador de punta fina para lograr trazos definidos sin esfuerzo." },
+{ name: "Dermolimpiador Facial", img: "seytu/Dermolimpiador Facial.png", cat: "Cuidado Facial", desc: "Limpieza profunda y suave que respeta el equilibrio natural del rostro." },
+{ name: "Desmaquillante para Ojos", img: "seytu/Desmaquillante para Ojos.png", cat: "Cuidado Facial", desc: "Retira fácilmente maquillaje a prueba de agua sin irritar ni dejar sensación grasa." },
+{ name: "Esponja para Maquillaje", img: "seytu/Esponja para Maquillaje.png", cat: "Accesorios y Especiales", desc: "Difumina bases y correctores logrando un acabado natural y sin marcas." },
+{ name: "Espuma de limpieza facial System Luminous", img: "seytu/Espuma de limpieza facial System Luminous.png", cat: "Cuidado Facial", desc: "Limpia a profundidad ayudando a devolver luminosidad y frescura al rostro." },
+{ name: "Espuma Limpiadora Facial", img: "seytu/Espuma Limpiadora Facial.webp", cat: "Cuidado Facial", desc: "Textura cremosa enriquecida con aloe vera y moringa para limpiar impurezas." },
+{ name: "Gel Anti-Manchas", img: "seytu/Gel Anti-Manchas.png", cat: "Cuidado Facial", desc: "Ayuda a unificar el tono de la piel y atenuar manchas cutáneas." },
+{ name: "Gel Fijador para Cabello", img: "seytu/Gel Fijador para Cabello.webp", cat: "Cuidado Capilar", desc: "Fijación firme y duradera sin dejar residuos ni dañar la fibra capilar." },
+{ name: "Gel Localizado Spot Specialist", img: "seytu/Gel Localizado Spot Specialist.png", cat: "Cuidado Facial", desc: "Tratamiento focalizado para reducir rápidamente imperfecciones puntuales." },
+{ name: "Gel-Crema para Estrías", img: "seytu/Gel-Crema para Estrías.png", cat: "Cuidado Corporal", desc: "Favorece la elasticidad de la piel ayudando a prevenir y disimular estrías." },
+{ name: "Jabón Líquido Corporal Frutos Rojos", img: "seytu/Jabón Líquido Corporal Frutos Rojos.png", cat: "Cuidado Corporal", desc: "Limpieza suave y refrescante con extractos naturales de frutos rojos." },
+{ name: "Labial Hidratante FPS 15", img: "seytu/Labial Hidratante FPS 15.png", cat: "Maquillaje", desc: "Color vibrante con hidratación continua y protección solar FPS 15." },
+{ name: "Labial Líquido Mate", img: "seytu/Labial Líquido Mate.png", cat: "Maquillaje", desc: "Acabado mate aterciopelado de larga duración que no reseca los labios." },
+{ name: "Lápiz delineador de labios", img: "seytu/Lápiz delineador de labios.png", cat: "Maquillaje", desc: "Define el contorno de tus labios con textura suave y alta pigmentación." },
+{ name: "Lápiz Delineador de Ojos", img: "seytu/Lápiz Delineador de Ojos.png", cat: "Maquillaje", desc: "Color intenso y deslizado cremoso resistente al agua y al sudor." },
+{ name: "Lápiz para Cejas Brown", img: "seytu/Lápiz para Cejas Brown.png", cat: "Maquillaje", desc: "Rellena y da forma natural a las cejas en tono café medio." },
+{ name: "Lápiz para Cejas Universal", img: "seytu/Lápiz para Cejas Universal.png", cat: "Maquillaje", desc: "Tono adaptable a distintos colores de cabello para unas cejas definidas." },
+{ name: "Lápiz para Cejas", img: "seytu/Lápiz para Cejas.png", cat: "Maquillaje", desc: "Precisión y durabilidad para enmarcar tu mirada de forma natural." },
+{ name: "Loción Capilar Fortificante", img: "seytu/Loción Capilar Fortificante.png", cat: "Cuidado Capilar", desc: "Estimula y fortalece el cuero cabelludo ayudando a reducir la caída." },
+{ name: "Loción Corporal Coco Vainilla", img: "seytu/Loción Corporal Coco Vainilla.png", cat: "Cuidado Corporal", desc: "Hidratación ligera de rápida absorción con delicioso aroma dulce." },
+{ name: "Loción Corporal Fruto Rojos", img: "seytu/Loción Corporal Fruto Rojos.png", cat: "Cuidado Corporal", desc: "Nutre y suaviza la piel de todo el cuerpo con notas frutales frescas." },
+{ name: "Loción limpiadora facial", img: "seytu/Loción limpiadora facial.webp", cat: "Cuidado Facial", desc: "Remueve impurezas y restos de maquillaje dejando la piel fresca." },
+{ name: "Maquillaje Compacto 2 en 1", img: "seytu/Maquillaje Compacto 2 en 1.png", cat: "Maquillaje", desc: "Acabado cremoso o en polvo resistente al agua con excelente cobertura." },
+{ name: "Maquillaje Líquido UP+ FPS15", img: "seytu/Maquillaje Líquido UP+ FPS15.png", cat: "Maquillaje", desc: "Alta cobertura resistente al agua con colágeno hidrolizado y ácido hialurónico." },
+{ name: "Máscara para Pestañas", img: "seytu/Máscara para Pestañas.png", cat: "Maquillaje", desc: "Aporta máximo volumen, alargamiento y definición resistente al agua." },
+{ name: "Mascarilla Facial", img: "seytu/Mascarilla Facial.png", cat: "Cuidado Facial", desc: "Purifica, hidrata y revitaliza el rostro devolviendo su suavidad natural." },
+{ name: "Mascarilla Reparadora Capilar", img: "seytu/Mascarilla Reparadora Capilar.png", cat: "Cuidado Capilar", desc: "Restaura el cabello seco o procesado aportando sedosidad y brillo." },
+{ name: "Micro-Exfoliante Facial", img: "seytu/Micro-Exfoliante Facial.png", cat: "Cuidado Facial", desc: "Renueva la textura de la piel eliminando células muertas con suavidad." },
+{ name: "Omniplus Gel Premium", img: "seytu/Omniplus Gel Premium.png", cat: "Cuidado Facial", desc: "Gel hidratante y regenerador enriquecido con extractos herbales y Omniplus." },
+{ name: "Paleta de Sombras Marrones", img: "seytu/Paleta de Sombras Marrones.png", cat: "Maquillaje", desc: "Tonos tierra altamente pigmentados para looks naturales o de noche." },
+{ name: "Paleta de Sombras Rosas", img: "seytu/Paleta de Sombras Rosas.png", cat: "Maquillaje", desc: "Combinación de tonos rosados satinados y mate de larga duración." },
+{ name: "Polvo Iluminador", img: "seytu/Polvo Iluminador.png", cat: "Maquillaje", desc: "Aporta un destello luminoso natural para resaltar pómulos y facciones." },
+{ name: "Polvo Traslúcido", img: "seytu/Polvo Traslúcido.png", cat: "Maquillaje", desc: "Sella el maquillaje y controla el brillo facial con acabado aterciopelado." },
+{ name: "Primer Facial", img: "seytu/Primer Facial.webp", cat: "Maquillaje", desc: "Prepara la piel, minimiza poros y prolonga la duración del maquillaje." },
+{ name: "Protector Solar Corporal FPS 50+", img: "seytu/Protector Solar Corporal FPS 50+.png", cat: "Cuidado Corporal", desc: "Alta protección solar resistente al agua para cuidar toda tu piel." },
+{ name: "Protector Solar Facial FPS 50 +", img: "seytu/Protector Solar Facial FPS 50 +.png", cat: "Cuidado Facial", desc: "Protección solar facial de amplio espectro y toque seco sin brillo." },
+{ name: "Rubor Compacto", img: "seytu/Rubor Compacto.webp", cat: "Maquillaje", desc: "Color natural y saludable para tus mejillas con textura sedosa." },
+{ name: "Sacapuntas SEYTÚ", img: "seytu/Sacapuntas SEYTÚ.png", cat: "Accesorios y Especiales", desc: "Doble entrada de precisión para mantener tus lápices cosméticos siempre listos." },
+{ name: "Set de Brochas Ojos y Labios", img: "seytu/Set de Brochas Ojos y Labios.png", cat: "Accesorios y Especiales", desc: "Herramientas profesionales para difuminar sombras y delinear con precisión." },
+{ name: "Set de Brochas Rostro", img: "seytu/Set de Brochas Rostro.png", cat: "Accesorios y Especiales", desc: "Brochas esenciales para aplicar polvo, rubor, contorno e iluminador." },
+{ name: "Set de Pruebas UP+", img: "seytu/Set de Pruebas UP+.png", cat: "Accesorios y Especiales", desc: "Muestrario completo de tonos del Maquillaje Líquido UP+ para asesoría." },
+{ name: "Set Delineador Compacto para Cejas", img: "seytu/Set Delineador Compacto para Cejas.png", cat: "Maquillaje", desc: "Estuche compacto con sombras y aplicador para diseñar cejas perfectas." },
+{ name: "Shaker Bottle SEYTÚ", img: "seytu/Shaker Bottle SEYTÚ.png", cat: "Accesorios y Especiales", desc: "Vaso mezclador oficial SEYTÚ práctico y resistente para tus bebidas." },
+{ name: "Shampoo Color Protect", img: "seytu/Shampoo Color Protect.png", cat: "Cuidado Capilar", desc: "Protege y prolonga la intensidad del color en cabello teñido." },
+{ name: "Shampoo con Extractos Herbales de Origen Natural", img: "seytu/Shampoo con Extractos Herbales de Origen Natural.png", cat: "Cuidado Capilar", desc: "Limpieza suave diaria que nutre y da brillo natural al cabello." },
+{ name: "Shampoo de Cuidado Especial para Cabello Débil", img: "seytu/Shampoo de Cuidado Especial para Cabello Débil.webp", cat: "Cuidado Capilar", desc: "Fortalece la raíz y ayuda a prevenir el quiebre del cabello frágil." },
+{ name: "Shampoo Fortificante", img: "seytu/Shampoo Fortificante.png", cat: "Cuidado Capilar", desc: "Aporta fuerza, cuerpo y vitalidad desde el cuero cabelludo." },
+{ name: "Suero de Noche", img: "seytu/Suero de Noche.png", cat: "Cuidado Facial", desc: "Fórmula concentrada reparadora para rejuvenecer la piel mientras duermes." },
+{ name: "Suero Facial de Hidratación Profunda con Aloe Vera", img: "seytu/Suero Facial de Hidratación Profunda con Aloe Vera.png", cat: "Cuidado Facial", desc: "Hidratación intensiva con aloe vera y ácido hialurónico para todo tipo de piel." },
+{ name: "Suero para Contorno de Ojos de Hidratación Profunda con Aloe Vera", img: "seytu/Suero para Contorno de Ojos de Hidratación Profunda con Aloe Vera.png", cat: "Cuidado Facial", desc: "Refresca, descongestiona e hidrata la delicada zona del contorno de ojos." },
+{ name: "Suero Perfeccionador Spot Specialist", img: "seytu/Suero Perfeccionador Spot Specialist.png", cat: "Cuidado Facial", desc: "Ayuda a controlar el exceso de grasa y mejorar la textura de pieles con imperfecciones." },
+{ name: "Suplemento H-Specialist", img: "seytu/Suplemento H-Specialist.png", cat: "Accesorios y Especiales", desc: "Nutrición especializada desde el interior para fortalecer cabello y uñas." },
+{ name: "Suplemento Spot Specialist", img: "seytu/Suplemento Spot Specialist.png", cat: "Accesorios y Especiales", desc: "Apoyo nutricional para mantener una piel limpia, sana y equilibrada." },
+{ name: "Suplemento T-Specialist", img: "seytu/Suplemento T-Specialist.png", cat: "Accesorios y Especiales", desc: "Fórmula nutricional especializada para complementar tu rutina de bienestar." },
+{ name: "Tinte Permanente sin Amoniaco Castaño Claro", img: "seytu/Tinte Permanente sin Amoniaco Castaño Claro.png", cat: "Cuidado Capilar", desc: "Coloración brillante y cobertura total de canas sin maltratar el cabello." },
+{ name: "Tinte Permanente sin Amoniaco Castaño Oscuro", img: "seytu/Tinte Permanente sin Amoniaco Castaño Oscuro.png", cat: "Cuidado Capilar", desc: "Tono profundo y natural con keratina hidrolizada y libre de amoniaco." },
+{ name: "Tinte Permanente sin Amoniaco Moka", img: "seytu/Tinte Permanente sin Amoniaco Moka.png", cat: "Cuidado Capilar", desc: "Matiz moka luminoso y sedoso que cuida la estructura capilar." },
+{ name: "Tinte Permanente sin Amoniaco Negro Natural", img: "seytu/Tinte Permanente sin Amoniaco Negro Natural.png", cat: "Cuidado Capilar", desc: "Negro intenso y duradero con máximo brillo y suavidad." },
+{ name: "Tinte Permanente sin Amoniaco Rojo", img: "seytu/Tinte Permanente sin Amoniaco Rojo.png", cat: "Cuidado Capilar", desc: "Color rojo vibrante y lleno de vida sin dañar la fibra capilar." },
+{ name: "Tinte Permanente sin Amoniaco Rubio Claro", img: "seytu/Tinte Permanente sin Amoniaco Rubio Claro.png", cat: "Cuidado Capilar", desc: "Rubio luminoso y natural con ingredientes acondicionadores." },
+{ name: "Tinte Permanente sin Amoniaco Rubio Extra Claro", img: "seytu/Tinte Permanente sin Amoniaco Rubio Extra Claro.png", cat: "Cuidado Capilar", desc: "Aclarado suave y uniforme con brillo espectacular sin amoniaco." },
+{ name: "Tónico Hidratante", img: "seytu/Tónico Hidratante.png", cat: "Cuidado Facial", desc: "Equilibra el pH, refresca y prepara la piel después de la limpieza facial." }
+];
+
+const hotmartPrograms = [
+{ title: "Extensiones de Pestañas - De Cero a Experta", img: "hotmart/Extensiones de pestañas - De Cero a Experta.webp", url: "https://go.hotmart.com/Q108160193L", desc: "Domina desde cero las técnicas profesionales de aplicación de pestañas pelo a pelo." },
+{ title: "Técnicas Avanzadas para Pedicuristas", img: "hotmart/Técnicas Avanzadas para Pedicuristas.webp", url: "https://go.hotmart.com/M108160238N", desc: "Perfecciona tus servicios de pedicura clínica y estética con protocolos avanzados." },
+{ title: "Extensionista Experta", img: "hotmart/Extensionista Experta.PNG", url: "https://go.hotmart.com/T108160551B", desc: "Conviértete en especialista de diseño de mirada, mapping y retención duradera." },
+{ title: "Exfoliantes Corporales: Aprende y Emprende desde Casa", img: "hotmart/Exfoliantes Corporales Aprende y Emprende desde Casa.webp", url: "https://go.hotmart.com/S108160622K", desc: "Formula exfoliantes naturales de alta calidad y crea tu propia línea cosmética." },
+{ title: "Colorista Experto 2.0", img: "hotmart/Colorista Experto 2.0.webp", url: "https://go.hotmart.com/G108160770D", desc: "Domina la colorimetría capilar, neutralizaciones, rubios perfectos y tendencias." },
+{ title: "El Arte de las Mantequillas Corporales", img: "hotmart/El Arte de las Mantequillas Corporales.webp", url: "https://go.hotmart.com/O108160881A", desc: "Aprende a elaborar mantequillas hidratantes artesanales con texturas de lujo." },
+{ title: "Maquillaje Perfecto 2.0", img: "hotmart/Maquillaje Perfecto 2.0.webp", url: "https://go.hotmart.com/A108173776T", desc: "Técnicas profesionales de preparación de piel, visagismo y maquillaje social." },
+{ title: "Método Lash Art", img: "hotmart/Método Lash Art.webp", url: "https://go.hotmart.com/O108173798R", desc: "Perfecciona efectos volumen ruso, híbrido y diseños personalizados de pestañas." },
+{ title: "Manicura Rusa High Level", img: "hotmart/Manicura Rusa High Level.webp", url: "https://go.hotmart.com/P108173814A", desc: "Limpieza profunda de cutícula con torno y esmaltado impecable de alto nivel." },
+{ title: "BB Glow + BB Lips", img: "hotmart/BB Glow + BB Lips.PNG", url: "https://go.hotmart.com/F108173819C", desc: "Tratamientos faciales y labiales de revitalización, hidratación y efecto porcelana." },
+{ title: "Crea tu Mantequilla Corporal Perfecta en 72 Horas", img: "hotmart/Crea tu Mantequilla Corporal Perfecta en 72 Horas.jpg", url: "https://go.hotmart.com/S108173840V", desc: "Guía rápida y práctica para formular tus primeras cremas corporales batidas." },
+{ title: "Workshop Restauración de Cejas", img: "hotmart/Workshop Restauración de Cejas.webp", url: "https://go.hotmart.com/Y108173865S", desc: "Diseño, laminado, sombreado con henna y recuperación de cejas naturales." },
+{ title: "Curso Profesional de Depilación con Cera 3 en 1 + Bonos", img: "hotmart/Curso Profesional de Depilación con Cera 3 en 1 + Bonos.webp", url: "https://go.hotmart.com/U108173878Q", desc: "Domina técnicas de depilación facial y corporal sin irritación y con acabados suaves." }
+];
+
+const seytuGrid = document.getElementById("seytu-grid");
+const seytuSearch = document.getElementById("seytu-search");
+const seytuCount = document.getElementById("seytu-count");
+const filterButtons = document.querySelectorAll("#seytu-filters .filter-pill");
+const hotmartGrid = document.getElementById("hotmart-grid");
+
+let currentCategory = "Todos";
+let currentQuery = "";
+
+function attachImageFallback(imgElement) {
+const originalSrc = imgElement.getAttribute("src");
+const extensions = [".png", ".webp", ".jpg", ".jpeg", ".PNG"];
+let attempt = 0;
+
+imgElement.addEventListener("error", function () {
+  attempt += 1;
+  if (attempt < extensions.length) {
+    const base = originalSrc.substring(0, originalSrc.lastIndexOf('.'));
+    imgElement.src = base + extensions[attempt];
+  } else {
+    imgElement.style.display = "none";
+    const fallback = imgElement.nextElementSibling;
+    if (fallback) {
+      fallback.style.display = "flex";
+    }
+  }
+});
+}
+
+function renderSeytu() {
+const query = currentQuery.trim().toLowerCase();
+const filtered = seytuProducts.filter(function (item) {
+const matchesCat = currentCategory === "Todos" || item.cat === currentCategory;
+const matchesSearch = !query ||
+item.name.toLowerCase().includes(query) ||
+item.desc.toLowerCase().includes(query) ||
+item.cat.toLowerCase().includes(query);
+return matchesCat && matchesSearch;
+});
+
+seytuCount.textContent = "Mostrando " + filtered.length + " de " + seytuProducts.length + " productos";
+
+if (filtered.length === 0) {
+seytuGrid.innerHTML = '<div class="empty-state">No encontramos productos con esa búsqueda. Intenta con otro nombre o selecciona "Todos".</div>';
+return;
+}
+
+seytuGrid.innerHTML = filtered.map(function (item) {
+const waMessage = encodeURIComponent("Hola, quiero pedir el producto SEYTÚ: " + item.name + ".");
+return (
+'<article class="product-card">' +
+'<div class="product-media">' +
+'<span class="product-badge">' + item.cat + '</span>' +
+'<img src="' + item.img + '" alt="' + item.name + ' SEYTÚ" loading="lazy">' +
+'<div class="product-fallback">' +
+'<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>' +
+'<span>' + item.name + '</span>' +
+'</div>' +
+'</div>' +
+'<div class="product-body">' +
+'<h3 class="product-title">' + item.name + '</h3>' +
+'<p class="product-desc">' + item.desc + '</p>' +
+'<div class="product-actions">' +
+'<a href="' + seytuBuyUrl + '" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Comprar en Línea</a>' +
+'<a href="' + whatsappBase + waMessage + '" target="_blank" rel="noopener noreferrer" class="btn btn-store-pick">Pedir por WhatsApp</a>' +
+'</div>' +
+'</div>' +
+'</article>'
+);
+}).join("");
+
+seytuGrid.querySelectorAll("img").forEach(attachImageFallback);
+}
+
+function renderHotmart() {
+hotmartGrid.innerHTML = hotmartPrograms.map(function (prog) {
+return (
+'<article class="hotmart-card">' +
+'<div class="hotmart-media">' +
+'<span class="hotmart-tag">Programa Digital</span>' +
+'<img src="' + prog.img + '" alt="' + prog.title + '" loading="lazy">' +
+'<div class="hotmart-fallback">' +
+'<svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>' +
+'<span>' + prog.title + '</span>' +
+'</div>' +
+'</div>' +
+'<div class="hotmart-body">' +
+'<h3 class="hotmart-title">' + prog.title + '</h3>' +
+'<p class="hotmart-desc">' + prog.desc + '</p>' +
+'<a href="' + prog.url + '" target="_blank" rel="noopener noreferrer" class="btn btn-hotmart">Acceder al Programa</a>' +
+'</div>' +
+'</article>'
+);
+}).join("");
+
+hotmartGrid.querySelectorAll("img").forEach(attachImageFallback);
+}
+
+seytuSearch.addEventListener("input", function (event) {
+currentQuery = event.target.value;
+renderSeytu();
+});
+
+filterButtons.forEach(function (button) {
+button.addEventListener("click", function () {
+filterButtons.forEach(function (btn) {
+btn.classList.remove("active");
+});
+button.classList.add("active");
+currentCategory = button.getAttribute("data-category");
+renderSeytu();
+});
+});
+
+renderSeytu();
+renderHotmart();
+})();
+</script>
+</body>
+</html>
