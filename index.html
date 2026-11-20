@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SEYTÚ | Cosmética & Cuidado Personal</title>
-<link rel="icon" type="image/jpeg" href="seytu logo.jpg">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%236b2d8b'/%3E%3Cstop offset='100%25' stop-color='%239b4dca'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M42 12c5 3 8 8 8 14 0 5-4 9-9 9h-6l-4-4v-6c0-5 4-9 9-9 1 0 2 .2 2 .4z' fill='%23f3e8ff' fill-opacity='0.25'/%3E%3Cpath d='M31 29l6 6'/%3E%3Cpath d='M31 33L16 48a3.2 3.2 0 0 0 4.5 4.5L35.5 37.5'/%3E%3Cpath d='M40 16l-3 6M45 20l-4 5'/%3E%3C/g%3E%3C/svg%3E">
 <meta name="description" content="Catálogo oficial de productos SEYTÚ Cosmética y Cuidado Personal, asesoría personalizada, compra en línea como Cliente Admirable, afiliación y programas digitales de belleza.">
 <style>
 :root {
@@ -18,6 +18,8 @@
 --whatsapp-dark: #168742;
 --hotmart: #f04e23;
 --hotmart-dark: #c93b15;
+--meraki-sage: #596e60;
+--meraki-clay: #b37460;
 --bg: #faf7fc;
 --surface: #ffffff;
 --text: #1c1528;
@@ -96,8 +98,8 @@ a {
 }
 
 .brand-mark {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   border-radius: 12px;
   background: linear-gradient(135deg, var(--omni-purple), var(--blu-accent));
   display: grid;
@@ -114,12 +116,12 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 22px;
+  gap: 20px;
   flex-wrap: wrap;
 }
 
 .main-nav a {
-  font-size: 0.95rem;
+  font-size: 0.94rem;
   font-weight: 600;
   color: var(--muted);
   transition: color var(--transition);
@@ -203,6 +205,16 @@ a {
 
 .btn-hotmart:hover {
   background: var(--hotmart-dark);
+}
+
+.btn-meraki {
+  background: linear-gradient(135deg, var(--meraki-sage), #44574b);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(68, 87, 75, 0.26);
+}
+
+.btn-meraki:hover {
+  filter: brightness(1.06);
 }
 
 .btn-outline {
@@ -491,6 +503,53 @@ a {
 
 .btn-store-pick:hover {
   background: #e9d5ff;
+}
+
+/* Meraki Studio Cross-Link Banner */
+.meraki-partner-section {
+  padding: 24px 0 64px;
+}
+
+.meraki-banner {
+  background: linear-gradient(135deg, #efece6 0%, #e6e1da 100%);
+  border: 1px solid #cfc7bc;
+  border-radius: 22px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.meraki-banner-content {
+  max-width: 650px;
+}
+
+.meraki-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #d5ddd7;
+  color: #415347;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.meraki-banner h3 {
+  font-size: clamp(1.45rem, 2.5vw, 1.95rem);
+  color: #26221e;
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.22;
+}
+
+.meraki-banner p {
+  color: #524c46;
+  font-size: 0.97rem;
 }
 
 /* Affiliation Centered Block */
@@ -824,6 +883,12 @@ a {
   .visit-content-row {
     grid-template-columns: 1fr;
   }
+
+  .meraki-banner {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+  }
 }
 
 @media (max-width: 960px) {
@@ -854,8 +919,11 @@ a {
 <div class="container header-inner">
   <a href="#inicio" class="brand">
     <span class="brand-mark" aria-hidden="true">
-      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+      <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16.5 3.5c2.2 1.3 3.5 3.6 3.5 6.2 0 2.3-1.8 4.3-4.1 4.3h-2.4l-1.5-1.5v-2.4c0-2.3 2-4.1 4.3-4.1.1 0 .2 0 .2-.5z"/>
+        <path d="M11.5 11.5l2.5 2.5"/>
+        <path d="M11.5 13.2L5 19.7a1.5 1.5 0 0 0 2.1 2.1l6.5-6.5"/>
+        <path d="M15.8 5.5l-1.3 2.5M18 7.5l-1.8 2"/>
       </svg>
     </span>
     <span>SEYTÚ <span class="accent">Cosmética</span></span>
@@ -866,6 +934,7 @@ a {
     <a href="#catalogo-seytu">Catálogo SEYTÚ</a>
     <a href="#afiliacion">Afiliación</a>
     <a href="#programas-digitales">Academia & Cursos</a>
+    <a href="https://josuepm.github.io/meraki/" target="_blank" rel="noopener noreferrer">Meraki Studio</a>
     <a href="#contacto">Contacto</a>
   </nav>
 
@@ -931,6 +1000,24 @@ a {
     </div>
 
     <div class="products-grid" id="seytu-grid"></div>
+  </div>
+</section>
+
+<!-- Enlace Cruzado hacia Meraki Studio -->
+<section class="meraki-partner-section">
+  <div class="container">
+    <div class="meraki-banner">
+      <div class="meraki-banner-content">
+        <span class="meraki-pill">Salón de Belleza & Spa en Ciudad Juárez</span>
+        <h3>Consiéntete en Meraki Studio</h3>
+        <p>
+          ¿Buscas masajes relajantes, faciales de limpieza profunda, extensión de pestañas, manicura, pedicura spa o cambio de look en Ciudad Juárez? Visita nuestro estudio de belleza y bienestar.
+        </p>
+      </div>
+      <a href="https://josuepm.github.io/meraki/" target="_blank" rel="noopener noreferrer" class="btn btn-meraki">
+        Visitar Meraki Studio ➔
+      </a>
+    </div>
   </div>
 </section>
 
@@ -1049,6 +1136,7 @@ a {
       <li><a href="#catalogo-seytu">Catálogo SEYTÚ</a></li>
       <li><a href="#afiliacion">Oportunidad de Afiliación</a></li>
       <li><a href="#programas-digitales">Academia & Cursos</a></li>
+      <li><a href="https://josuepm.github.io/meraki/" target="_blank" rel="noopener noreferrer">Meraki Studio (Salón & Spa)</a></li>
       <li><a href="#contacto">Contacto Directo</a></li>
     </ul>
   </div>
@@ -1234,7 +1322,7 @@ return (
 '<span class="product-badge">' + item.cat + '</span>' +
 '<img src="' + item.img + '" alt="' + item.name + ' SEYTÚ" loading="lazy">' +
 '<div class="product-fallback">' +
-'<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>' +
+'<svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16.5 3.5c2.2 1.3 3.5 3.6 3.5 6.2 0 2.3-1.8 4.3-4.1 4.3h-2.4l-1.5-1.5v-2.4c0-2.3 2-4.1 4.3-4.1.1 0 .2 0 .2-.5z"/><path d="M11.5 11.5l2.5 2.5"/><path d="M11.5 13.2L5 19.7a1.5 1.5 0 0 0 2.1 2.1l6.5-6.5"/></svg>' +
 '<span>' + item.name + '</span>' +
 '</div>' +
 '</div>' +
