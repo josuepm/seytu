@@ -14,6 +14,8 @@
 --blu-soft: #f3e8ff;
 --omni-purple: #6b2d8b;
 --omni-purple-dark: #4f1d69;
+--depositoblu-blue: #0066b2;
+--depositoblu-cyan: #00a8e8;
 --whatsapp: #1fa855;
 --whatsapp-dark: #168742;
 --hotmart: #f04e23;
@@ -116,12 +118,12 @@ a {
 .main-nav {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 18px;
   flex-wrap: wrap;
 }
 
 .main-nav a {
-  font-size: 0.94rem;
+  font-size: 0.92rem;
   font-weight: 600;
   color: var(--muted);
   transition: color var(--transition);
@@ -214,6 +216,16 @@ a {
 }
 
 .btn-meraki:hover {
+  filter: brightness(1.06);
+}
+
+.btn-depositoblu {
+  background: linear-gradient(135deg, var(--depositoblu-blue), var(--depositoblu-cyan));
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(0, 102, 178, 0.26);
+}
+
+.btn-depositoblu:hover {
   filter: brightness(1.06);
 }
 
@@ -505,9 +517,53 @@ a {
   background: #e9d5ff;
 }
 
-/* Meraki Studio Cross-Link Banner */
-.meraki-partner-section {
+/* Cross-Link Banners (Depósito Blu & Meraki Studio) */
+.partner-banners-section {
   padding: 24px 0 64px;
+}
+
+.partner-banners-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.depositoblu-banner {
+  background: linear-gradient(135deg, #eaf6ff 0%, #dceeff 100%);
+  border: 1px solid #bdddf7;
+  border-radius: 22px;
+  padding: 36px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  box-shadow: var(--shadow-sm);
+}
+
+.depositoblu-pill {
+  display: inline-block;
+  padding: 5px 14px;
+  border-radius: 999px;
+  background: #cce7ff;
+  color: #004c87;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.depositoblu-banner h3 {
+  font-size: clamp(1.45rem, 2.5vw, 1.95rem);
+  color: #071e3d;
+  font-weight: 800;
+  margin-bottom: 8px;
+  line-height: 1.22;
+}
+
+.depositoblu-banner p {
+  color: #3a506b;
+  font-size: 0.97rem;
 }
 
 .meraki-banner {
@@ -522,7 +578,8 @@ a {
   box-shadow: var(--shadow-sm);
 }
 
-.meraki-banner-content {
+.meraki-banner-content,
+.depositoblu-banner-content {
   max-width: 650px;
 }
 
@@ -884,7 +941,8 @@ a {
     grid-template-columns: 1fr;
   }
 
-  .meraki-banner {
+  .meraki-banner,
+  .depositoblu-banner {
     flex-direction: column;
     align-items: flex-start;
     padding: 28px 24px;
@@ -932,6 +990,7 @@ a {
   <nav class="main-nav" aria-label="Navegación principal">
     <a href="#inicio">Inicio</a>
     <a href="#catalogo-seytu">Catálogo SEYTÚ</a>
+    <a href="https://josuepm.github.io/depositoblu/" target="_blank" rel="noopener noreferrer">Nutrición Omnilife</a>
     <a href="#afiliacion">Afiliación</a>
     <a href="#programas-digitales">Academia & Cursos</a>
     <a href="https://josuepm.github.io/meraki/" target="_blank" rel="noopener noreferrer">Meraki Studio</a>
@@ -1003,9 +1062,24 @@ a {
   </div>
 </section>
 
-<!-- Enlace Cruzado hacia Meraki Studio -->
-<section class="meraki-partner-section">
-  <div class="container">
+<!-- Enlaces Cruzados: Depósito Blu (Nutrición Omnilife) y Meraki Studio -->
+<section class="partner-banners-section">
+  <div class="container partner-banners-stack">
+    <!-- Banner Depósito Blu -->
+    <div class="depositoblu-banner">
+      <div class="depositoblu-banner-content">
+        <span class="depositoblu-pill">Línea Nutricional Omnilife & Tienda en Ciudad Juárez</span>
+        <h3>Nutrición Integral en Depósito Blu</h3>
+        <p>
+          Potencia tu belleza desde el interior con el catálogo completo de suplementos nutricionales Omnilife: Omniplus, Magnus, Power Maker, Fiber'n Plus, Cafezzino y más. Visítanos en Av. Vicente Guerrero 308 o pide en línea.
+        </p>
+      </div>
+      <a href="https://josuepm.github.io/depositoblu/" target="_blank" rel="noopener noreferrer" class="btn btn-depositoblu">
+        Ir a Depósito Blu ➔
+      </a>
+    </div>
+
+    <!-- Banner Meraki Studio -->
     <div class="meraki-banner">
       <div class="meraki-banner-content">
         <span class="meraki-pill">Salón de Belleza & Spa en Ciudad Juárez</span>
@@ -1134,6 +1208,7 @@ a {
     <ul>
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#catalogo-seytu">Catálogo SEYTÚ</a></li>
+      <li><a href="https://josuepm.github.io/depositoblu/" target="_blank" rel="noopener noreferrer">Depósito Blu (Nutrición Omnilife)</a></li>
       <li><a href="#afiliacion">Oportunidad de Afiliación</a></li>
       <li><a href="#programas-digitales">Academia & Cursos</a></li>
       <li><a href="https://josuepm.github.io/meraki/" target="_blank" rel="noopener noreferrer">Meraki Studio (Salón & Spa)</a></li>
